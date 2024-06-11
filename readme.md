@@ -6,6 +6,16 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-stoic-api**](https://github.com/narenkram/steadfast-stoic-api): The backend API server.
 3. [**steadfast-dhan-websocket**](https://github.com/narenkram/steadfast-dhan-websocket): The WebSocket service(Not Implemented yet).
 
+# App Screenshots
+
+![Preview with Arrow Keys](preview_arrow_keys.png)
+![Preview in Dark Mode](preview_dark.png)
+![Preview in Light Mode](preview_light.png)
+
+# Join Our Telegram Channel
+
+Stay updated by joining our [Telegram Channel](https://t.me/steadfaststoic).
+
 ### Get your API Key from DhanHQ and replace API Key in steadfast-stoic-api/.env and in market-feed-socket.py
 
 To run the frontend application, navigate to the steadfast-stoic-app directory and use the following commands:
@@ -15,8 +25,8 @@ cd steadfast-stoic-app
 npm install
 npm run dev
 ```
-The application will be available at http://localhost:5173.
 
+The application will be available at http://localhost:5173.
 
 To run the backend API server, navigate to the steadfast-stoic-api directory and use the following commands:
 
@@ -25,8 +35,8 @@ cd steadfast-stoic-api
 npm install
 node server.js
 ```
-The API server will be available at http://localhost:3000.
 
+The API server will be available at http://localhost:3000.
 
 # Quick Start
 
@@ -44,7 +54,6 @@ start-all.bat
 ```
 
 This will ensure that all services are up and running.
-
 
 ## steadfast-dhan-websocket - Not Implemented yet.
 
