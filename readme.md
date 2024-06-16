@@ -8,7 +8,6 @@ This repository is a monorepo containing three main projects:
 
 # App Screenshots
 
-![Preview with Arrow Keys](preview_arrow_keys.png)
 ![Preview in Dark Mode](preview_dark.png)
 ![Preview in Light Mode](preview_light.png)
 
