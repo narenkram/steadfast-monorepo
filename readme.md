@@ -7,7 +7,7 @@ This repository is a monorepo containing three main projects:
 3. [**steadfast-dhan-websocket**](https://github.com/narenkram/steadfast-dhan-websocket): The WebSocket service(Not Implemented yet).
 
 
-### Quick Status:
+### Quick Status: (Updated on 16-06-2024)
 - Dhan - 🟢 Partial Trading Capabilities
 - Flattrade - 🟡 Implementation on progress
 
