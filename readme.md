@@ -7,9 +7,10 @@ This repository is a monorepo containing three main projects:
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service(Not Implemented yet).
 
 
-### Quick Status: (Updated on 29-06-2024)
+### Quick Status: (Updated on 30-06-2024)
 - Dhan - 🟢 Partial Trading Capabilities
 - Flattrade - 🟢 Partial Trading Capabilities
+- Shoonya (Finvasia) - 🔵 Will be added in few days
 - Websocket - 🟡 Implementation on progress
 
 # App Screenshots
@@ -21,27 +22,16 @@ This repository is a monorepo containing three main projects:
 
 Stay updated by joining our [Telegram Channel](https://t.me/steadfaststoic).
 
-### Get your API Key from DhanHQ and replace API Key in steadfast-stoic-api/.env and in market-feed-socket.py
-
-To run the frontend application, navigate to the steadfast-stoic-app directory and use the following commands:
-
-```bash
-cd steadfast-stoic-app
-npm install
-npm run dev
+### Get your API Key from your Broker and replace API Key in steadfast-stoic-api/.env
 ```
+DHAN_CLIENT_ID = "Your_Dhan_Client_ID"
+DHAN_API_TOKEN = "Your_Dhan_API_Token"
 
-The application will be available at http://localhost:5173.
 
-To run the backend API server, navigate to the steadfast-stoic-api directory and use the following commands:
-
-```bash
-cd steadfast-stoic-api
-npm install
-node server.js
+FLATTRADE_CLIENT_ID = "Your_Flattrade_Client_ID"
+FLATTRADE_API_KEY = "Your_Flattrade_API_Key"
+FLATTRADE_API_SECRET = "Your_Flattrade_API_Secret"
 ```
-
-The API server will be available at http://localhost:3000.
 
 # Quick Start
 
@@ -60,18 +50,43 @@ start-all.bat
 
 This will ensure that all services are up and running.
 
-## steadfast-dhan-websocket - Not Implemented yet.
+## If you prefer to run the services manually, follow the steps below:
 
-The steadfast-dhan-websocket folder contains a Python package for interacting with the DhanHQ API. This service manages WebSocket connections to receive real-time market data and updates.
-
-### Getting Started
-
-To run the WebSocket service, navigate to the steadfast-dhan-websocket directory and use the following commands:
+## steadfast-app 
+### Running the Frontend Application
+To run the frontend application, navigate to the steadfast-stoic-app directory and use the following commands:
 
 ```bash
-cd steadfast-dhan-websocket
+cd steadfast-stoic-app
+npm install
+npm run dev
+```
+
+The application will be available at http://localhost:5173.
+
+## steadfast-api 
+### Running the Backend API Server
+To run the backend API server, navigate to the steadfast-stoic-api directory and use the following commands:
+
+```bash
+cd steadfast-stoic-api
+npm install
+node server.js
+```
+
+The API server will be available at http://localhost:3000.
+
+
+## steadfast-websocket - Not Implemented yet.
+
+The steadfast-websocket folder contains a Python package for interacting with the API. This service manages WebSocket connections to receive real-time market data and updates.
+
+### Running the Websocket Server
+To run the Websocket service, navigate to the steadfast-websocket directory and use the following commands:
+
+```bash
+cd steadfast-websocket
 pip install -r requirements.txt
 python main.py
 ```
-
-The WebSocket service will connect to the DhanHQ API and start receiving real-time market data.
+The Websocket server will be available at http://localhost:5000.
