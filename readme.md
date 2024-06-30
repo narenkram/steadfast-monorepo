@@ -52,7 +52,7 @@ This will ensure that all services are up and running.
 
 ## If you prefer to run the services manually, follow the steps below:
 
-## steadfast-app 
+## steadfast-app 🟢
 ### Running the Frontend Application
 To run the frontend application, navigate to the steadfast-stoic-app directory and use the following commands:
 
@@ -64,7 +64,7 @@ npm run dev
 
 The application will be available at http://localhost:5173.
 
-## steadfast-api 
+## steadfast-api 🟢
 ### Running the Backend API Server
 To run the backend API server, navigate to the steadfast-stoic-api directory and use the following commands:
 
@@ -77,7 +77,7 @@ node server.js
 The API server will be available at http://localhost:3000.
 
 
-## steadfast-websocket - Not Implemented yet.
+## steadfast-websocket - 🔴 Not Implemented yet.
 
 The steadfast-websocket folder contains a Python package for interacting with the API. This service manages WebSocket connections to receive real-time market data and updates.
 
