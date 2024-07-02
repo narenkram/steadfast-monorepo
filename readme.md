@@ -14,7 +14,7 @@ This repository is a monorepo containing three main projects:
 - Websocket - 🟡 Implementation on progress
 
 # App Screenshots
-
+![Preview in Manage Brokers](preview_managebroker_light.png)
 ![Preview in Dark Mode](preview_dark.png)
 ![Preview in Light Mode](preview_light.png)
 
