@@ -84,3 +84,4 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 - Double-click the `update-all.bat` file or run it from the command prompt.
 - This script updates both the app and API repositories to their latest versions. `Run it daily for app updates before Step 2`.
 - If you update when the app and api is running, you will have to `Stop` and `Start` again to see the updates.
+- To `Stop` simply close the opened command prompt windows.
