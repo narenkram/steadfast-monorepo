@@ -52,78 +52,35 @@ FLATTRADE_API_SECRET = "Your_Flattrade_API_Secret"
 
 ## Steps to run the app
 
-#### 1. Install nodejs from https://nodejs.org/en/download/prebuilt-installer (One time step)
+### `Step 0`: Prerequisites
 
-#### 2. After installation, Open CMD and verify installation using command (One time step)
+1. Ensure Git is installed and accessible from the command line.
+2. Ensure Node.js and npm are installed and accessible from the command line.
+3. Review the output of each script for any error messages or important information.
 
-```bash
-node -v && npm -v
-```
+### `Step 1`: Install
 
-#### 3. Open Project root folder in File Explorer and (SHIFT + RIGHT CLICK) and select "Open in Terminal"
+Double-click the `install-all.bat` file or run it from the command prompt.
 
-#### 4. Install the App and node modules using below command (One time step)
+#### What it does:
 
-```bash
-git clone https://github.com/narenkram/steadfast-stoic-app
-```
+1. Clones the steadfast-stoic-app repository
+2. Installs app dependencies
+3. Clones the steadfast-stoic-api repository
+4. Installs API dependencies
 
-```bash
-cd steadfast-stoic-app
-```
+### `Step 2`: Start
 
-```bash
-npm install
-```
+Double-click the `start-all.bat` file or run it from the command prompt.
 
-#### 5. Install the API server and node modules using below command (One time step)
+#### What it does:
 
-Navigate back to root folder in CMD using below command
+1. Starts the steadfast-stoic-app at `localhost: 5173`
+2. Starts the steadfast-stoic-api server at `localhost: 3000`
 
-```bash
-cd ..
-```
+### `Step 3`: Update
 
-```bash
-git clone https://github.com/narenkram/steadfast-stoic-api
-```
-
-```bash
-cd steadfast-stoic-api
-```
-
-```bash
-npm install
-```
-
-#### 6. Navigate back to root folder and run the app using below command
-
-```bash
-cd ..
-```
-
-```bash
-.\start-all.bat
-```
-
-# Quick Start for Everyday use
-
-Just double click on **start-all.bat** file and it will start both frontend and backend services.
-
-or use cmd and run the following command
-For Windows:
-
-```bash
-.\start-all.bat
-```
-
-## To Keep the app updated
-
-just double click on **update-all.bat** file and it will update both frontend and backend services.
-
-or use cmd and run the following command
-For Windows:
-
-```bash
-.\update-all.bat
-```
+- `Optional` if you are running for the first time, immedieatly after installation.
+- Double-click the `update-all.bat` file or run it from the command prompt.
+- This script updates both the app and API repositories to their latest versions. `Run it daily for app updates before Step 2`.
+- If you update when the app and api is running, you will have to `Stop` and `Start` again to see the updates.
