@@ -50,6 +50,11 @@ FLATTRADE_API_KEY = "Your_Flattrade_API_Key"
 FLATTRADE_API_SECRET = "Your_Flattrade_API_Secret"
 ```
 
+### Redirect URL for API
+
+- `http://localhost:5173/redirect?`
+- Register this redirect URL in your broker's API Key creation process.
+
 ## Steps to run the app
 
 ### `Step 0`: Prerequisites
