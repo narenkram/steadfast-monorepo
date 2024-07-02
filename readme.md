@@ -54,7 +54,7 @@ FLATTRADE_API_SECRET = "Your_Flattrade_API_Secret"
 
 #### 1. Install nodejs from https://nodejs.org/en/download/prebuilt-installer (One time step)
 
-#### 2. After installation, verify installation using command (One time step)
+#### 2. After installation, Open CMD and verify installation using command (One time step)
 
 ```bash
 node -v && npm -v
