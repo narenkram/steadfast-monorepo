@@ -101,10 +101,6 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 1. Starts the steadfast-stoic-app at `localhost: 5173`
 2. Starts the steadfast-stoic-api server at `localhost: 3000`
 
-### `Step 4`: Update
-
-- `Optional` if you are running for the first time, immedieatly after installation.
-- Double-click the `update-all.bat` file or run it from the command prompt.
-- This script updates both the app and API repositories to their latest versions. `Run it daily for app updates before Step 3`.
-- If you update when the app and api is running, you will have to `Stop` and `Start` again to see the updates.
+### `Step 4`: Stop
 - To `Stop` simply close the opened command prompt windows.
+- Or Press any key to stop the app and api.

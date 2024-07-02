@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 :menu
 echo Choose an option:
-echo 1. Update the app, api and Run
+echo 1. Update the app, api and Run (Recommended once a day)
 echo 2. Run existing version
 set /p choice="Enter your choice (1 or 2): "
 
