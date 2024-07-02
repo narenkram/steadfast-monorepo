@@ -16,11 +16,15 @@ This repository is a monorepo containing three main projects:
 ### What works? (Updated on 02-07-2024)
 👉 All these basic operations now work well for both brokers:
 
+- ✅ kill switch
 - ✅ buy/sell
 - ✅ cancel orders
 - ✅ place limit
 - ✅ select strikes
 - ✅ close all positions
+
+#### Note: 
+kill switch works on client side only, you will still be able to trade from your broker terminal.
 
 # App Screenshots
 
