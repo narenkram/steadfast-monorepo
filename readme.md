@@ -54,11 +54,26 @@ FLATTRADE_API_SECRET = "Your_Flattrade_API_Secret"
 
 ### `Step 0`: Prerequisites
 
-1. Ensure Git is installed and accessible from the command line.
-2. Ensure Node.js and npm are installed and accessible from the command line.
-3. Review the output of each script for any error messages or important information.
+1. Ensure [Git](https://git-scm.com/download/win) is installed and accessible from the command line.
 
-### `Step 1`: Install
+```
+git --version
+```
+
+2. Ensure [Node.js and npm](https://nodejs.org/en/download/prebuilt-installer) are installed and accessible from the command line.
+
+```
+node -v && npm -v
+```
+
+### `Step 1`: Clone the Steadfast Stoic Monorepo
+
+1. Download & Install [GitHub Desktop](https://desktop.github.com/)
+2. On top right of this repo click "Code" > "Open with GitHub Desktop"
+3. Choose a local path and click "Clone"
+4. Open the monorepo folder in file explorer.
+
+### `Step 2`: Install
 
 Double-click the `install-all.bat` file or run it from the command prompt.
 
@@ -69,7 +84,7 @@ Double-click the `install-all.bat` file or run it from the command prompt.
 3. Clones the steadfast-stoic-api repository
 4. Installs API dependencies
 
-### `Step 2`: Start
+### `Step 3`: Start
 
 Double-click the `start-all.bat` file or run it from the command prompt.
 
@@ -78,10 +93,10 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 1. Starts the steadfast-stoic-app at `localhost: 5173`
 2. Starts the steadfast-stoic-api server at `localhost: 3000`
 
-### `Step 3`: Update
+### `Step 4`: Update
 
 - `Optional` if you are running for the first time, immedieatly after installation.
 - Double-click the `update-all.bat` file or run it from the command prompt.
-- This script updates both the app and API repositories to their latest versions. `Run it daily for app updates before Step 2`.
+- This script updates both the app and API repositories to their latest versions. `Run it daily for app updates before Step 3`.
 - If you update when the app and api is running, you will have to `Stop` and `Start` again to see the updates.
 - To `Stop` simply close the opened command prompt windows.
