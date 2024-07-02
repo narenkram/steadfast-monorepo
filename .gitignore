@@ -82,3 +82,6 @@ dump.rdb
 /steadfast-dhan-websocket/__pycache__/
 /steadfast-dhan-websocket/env/
 /steadfast-dhan-websocket/.venv/
+
+# Ignore nested .git directories
+**/.git
