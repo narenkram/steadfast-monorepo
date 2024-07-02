@@ -60,7 +60,9 @@ FLATTRADE_API_SECRET = "Your_Flattrade_API_Secret"
 node -v && npm -v
 ```
 
-#### 3. Install the App and node modules using below command (One time step)
+#### 3. Open Project root folder in File Explorer and (SHIFT + RIGHT CLICK) and select "Open in Terminal"
+
+#### 4. Install the App and node modules using below command (One time step)
 
 ```bash
 git clone https://github.com/narenkram/steadfast-stoic-app
@@ -74,7 +76,13 @@ cd steadfast-stoic-app
 npm install
 ```
 
-#### 4. Install the API server and node modules using below command (One time step)
+#### 5. Install the API server and node modules using below command (One time step)
+
+Navigate back to root folder in CMD using below command
+
+```bash
+cd ..
+```
 
 ```bash
 git clone https://github.com/narenkram/steadfast-stoic-api
@@ -88,7 +96,7 @@ cd steadfast-stoic-api
 npm install
 ```
 
-#### 5. Navigate back to root folder and run the app using below command
+#### 6. Navigate back to root folder and run the app using below command
 
 ```bash
 cd ..
