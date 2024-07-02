@@ -19,7 +19,7 @@ This repository is a monorepo containing three main projects:
 - ✅ kill switch
 - ✅ buy/sell
 - ✅ cancel orders
-- ✅ place limit
+- ✅ place limit/market
 - ✅ select strikes
 - ✅ close all positions
 
