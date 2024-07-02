@@ -30,8 +30,11 @@ kill switch works on client side only, you will still be able to trade from your
 
 # App Screenshots
 
+## Manage Brokers
 ![Preview in Manage Brokers](preview_managebroker_light.png)
+## Dark Mode
 ![Preview in Dark Mode](preview_dark.png)
+## Light Mode
 ![Preview in Light Mode](preview_light.png)
 
 # Join Our Telegram Channel
