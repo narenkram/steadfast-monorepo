@@ -23,6 +23,7 @@ This repository is a monorepo containing three main projects:
 - ✅ place limit/market
 - ✅ select strikes
 - ✅ close all positions
+- ✅ 1 click buttons for buy/sell/cancel/close
 
 #### Note:
 
@@ -31,10 +32,15 @@ kill switch works on client side only, you will still be able to trade from your
 # App Screenshots
 
 ## Manage Brokers
+
 ![Preview in Manage Brokers](preview_managebroker_light.png)
+
 ## Dark Mode
+
 ![Preview in Dark Mode](preview_dark.png)
+
 ## Light Mode
+
 ![Preview in Light Mode](preview_light.png)
 
 # Join Our Telegram Channel
@@ -102,5 +108,6 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 2. Starts the steadfast-stoic-api server at `localhost: 3000`
 
 ### `Step 4`: Stop
+
 - To `Stop` simply close the opened command prompt windows.
 - Or Press any key to stop the app and api.
