@@ -26,6 +26,7 @@ This repository is a monorepo containing three main projects:
 - ✅ 1 click buttons for buy/sell/cancel/close
 - 🟡 ltp for underlying
 - 🟡 ltp for selected call/put strikes
+- 🔵 automatic atm strike selection
 
 #### Note:
 
