@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 :menu
 echo Choose an option:
-echo 1. Update the app, api and Run (Recommended once a day)
+echo 1. Update the app, api and websocket (Recommended once a day)
 echo 2. Run existing version
 set /p choice="Enter your choice (1 or 2): "
 
@@ -29,6 +29,16 @@ cd steadfast-stoic-api
 git pull https://github.com/narenkram/steadfast-stoic-api main
 if !errorlevel! neq 0 (
     echo Error updating steadfast-stoic-api.
+    goto :error
+)
+cd ..
+
+REM Update steadfast-websocket
+echo Updating steadfast-websocket...
+cd steadfast-websocket
+git pull https://github.com/narenkram/steadfast-websocket main
+if !errorlevel! neq 0 (
+    echo Error updating steadfast-websocket.
     goto :error
 )
 cd ..

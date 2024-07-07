@@ -39,6 +39,25 @@ if !errorlevel! neq 0 (
 )
 cd ..
 
+REM Clone the WebSocket repository and install dependencies
+echo Cloning and installing WebSocket...
+cd steadfast-websocket
+git init
+git remote add origin https://github.com/narenkram/steadfast-websocket.git
+git fetch
+git checkout -b main origin/main
+if !errorlevel! neq 0 (
+    echo Error occurred while cloning WebSocket repository.
+    goto :error
+)
+echo Installing WebSocket dependencies...
+call npm install
+if !errorlevel! neq 0 (
+    echo Error occurred while installing WebSocket dependencies.
+    goto :error
+)
+cd ..
+
 echo Repositories cloned and dependencies installed successfully.
 goto :end
 

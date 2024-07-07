@@ -4,7 +4,7 @@ This repository is a monorepo containing three main projects:
 
 1. [**steadfast-stoic-app**](https://github.com/narenkram/steadfast-stoic-app): The frontend application.
 2. [**steadfast-stoic-api**](https://github.com/narenkram/steadfast-stoic-api): The backend API server.
-3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service(Not Implemented yet).
+3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
 ### Quick Status: (Updated on 30-06-2024)
 
@@ -13,7 +13,7 @@ This repository is a monorepo containing three main projects:
 - Shoonya (Finvasia) - 🔵 Will be added in few days
 - Websocket - 🟡 Implementation on progress
 
-### What works? (Updated on 02-07-2024)
+### What works? (Updated on 07-07-2024)
 
 👉 All these basic operations now work well for both brokers:
 
@@ -24,6 +24,8 @@ This repository is a monorepo containing three main projects:
 - ✅ select strikes
 - ✅ close all positions
 - ✅ 1 click buttons for buy/sell/cancel/close
+- 🟡 ltp for underlying
+- 🟡 ltp for selected call/put strikes
 
 #### Note:
 
@@ -80,6 +82,12 @@ git --version
 node -v && npm -v
 ```
 
+3. Ensure [Python](https://www.python.org/downloads/) is installed and accessible from the command line.
+
+```
+python -v
+```
+
 ### `Step 1`: Clone the Steadfast Stoic Monorepo
 
 1. Download & Install [GitHub Desktop](https://desktop.github.com/)
@@ -97,6 +105,8 @@ Double-click the `install-all.bat` file or run it from the command prompt.
 2. Installs app dependencies
 3. Clones the steadfast-stoic-api repository
 4. Installs API dependencies
+5. Clones the steadfast-websocket repository
+6. Installs WebSocket dependencies
 
 ### `Step 3`: Start
 
@@ -106,6 +116,7 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 
 1. Starts the steadfast-stoic-app at `localhost: 5173`
 2. Starts the steadfast-stoic-api server at `localhost: 3000`
+3. Starts the steadfast-websocket server at `localhost: 8765`
 
 ### `Step 4`: Stop
 
