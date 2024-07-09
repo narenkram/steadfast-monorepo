@@ -51,12 +51,13 @@ if !errorlevel! neq 0 (
     goto :error
 )
 echo Installing WebSocket dependencies...
+cd flattrade
 call pip install -r requirements.txt
 if !errorlevel! neq 0 (
     echo Error occurred while installing WebSocket dependencies.
     goto :error
 )
-cd ..
+cd ..\..
 
 echo Repositories cloned and dependencies installed successfully.
 goto :end
