@@ -121,4 +121,4 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 ### `Step 4`: Stop
 
 - To `Stop` simply close the opened command prompt windows.
-- Or Press any key to stop the app and api.
+- Or Press any key to stop the app, api and websocket.
