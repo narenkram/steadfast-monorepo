@@ -18,9 +18,9 @@ This repository is a monorepo containing three main projects:
 👉 All these basic operations now work well for `flattrade`, you can trade [NIFTY, BANKNIFTY, FINIFTY]:
 
 - ✅ kill switch
-- ✅ buy/sell
+- ✅ buy/sell market price
 - ✅ cancel orders
-- ✅ place limit/market
+- ✅ place limit on dropdown
 - ✅ select strikes
 - ✅ close all positions
 - ✅ 1 click buttons for buy/sell/cancel/close
