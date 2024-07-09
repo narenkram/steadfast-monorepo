@@ -6,16 +6,16 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-stoic-api**](https://github.com/narenkram/steadfast-stoic-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status: (Updated on 30-06-2024)
+### Quick Status: (Updated on 09-07-2024)
 
-- Dhan - 🟢 Partial Trading Capabilities
+- Dhan - 🔴 Partial Trading Capabilities [Dropping Support]
 - Flattrade - 🟢 Partial Trading Capabilities
-- Shoonya (Finvasia) - 🔵 Will be added in few days
+- Shoonya (Finvasia) - 🔵 Will be added soon
 - Websocket - 🟡 Implementation on progress
 
-### What works? (Updated on 07-07-2024)
+### What works? (Updated on 09-07-2024)
 
-👉 All these basic operations now work well for both brokers:
+👉 All these basic operations now work well for `flattrade`, you can trade [NIFTY, BANKNIFTY, FINIFTY]:
 
 - ✅ kill switch
 - ✅ buy/sell
@@ -24,9 +24,8 @@ This repository is a monorepo containing three main projects:
 - ✅ select strikes
 - ✅ close all positions
 - ✅ 1 click buttons for buy/sell/cancel/close
-- 🟡 ltp for underlying
-- 🟡 ltp for selected call/put strikes
-- 🔵 automatic atm strike selection
+- ✅ ltp for underlying, selected call/put strikes 
+- ✅ automatic atm strike selection 
 
 #### Note:
 
