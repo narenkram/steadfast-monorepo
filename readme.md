@@ -11,7 +11,8 @@ This repository is a monorepo containing three main projects:
 - Dhan - 🟢 Partial Trading Capabilities
 - Flattrade - 🟢 Partial Trading Capabilities
 - Shoonya (Finvasia) - 🟡 Implementation on progress
-- Websocket - 🟡 Implementation on progress
+- Websocket - 🟢 Available for Flattrade
+- Multiple Websocket - 🔵 Will add soon
 
 ### What works? (Updated on 13-07-2024)
 
