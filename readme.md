@@ -6,14 +6,14 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-stoic-api**](https://github.com/narenkram/steadfast-stoic-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status: (Updated on 09-07-2024)
+### Quick Status: (Updated on 13-07-2024)
 
-- Dhan - 🔴 Partial Trading Capabilities [Dropping Support]
+- Dhan - 🟢 Partial Trading Capabilities
 - Flattrade - 🟢 Partial Trading Capabilities
-- Shoonya (Finvasia) - 🔵 Will be added soon
+- Shoonya (Finvasia) - 🟡 Implementation on progress
 - Websocket - 🟡 Implementation on progress
 
-### What works? (Updated on 09-07-2024)
+### What works? (Updated on 13-07-2024)
 
 👉 All these basic operations now work well for `flattrade`, you can trade [NIFTY, BANKNIFTY, FINIFTY]:
 
