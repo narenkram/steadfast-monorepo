@@ -73,6 +73,8 @@ Stay updated by joining our [Telegram Channel](https://t.me/steadfaststoic).
 
 ### `Step 0`: Prerequisites
 
+Operating System: `Windows 11`
+
 1. Ensure [Git](https://git-scm.com/download/win) is installed and accessible from the command line.
 
 ```
@@ -88,7 +90,7 @@ node -v && npm -v
 3. Ensure [Python](https://www.python.org/downloads/) is installed and accessible from the command line.
 
 ```
-python -v
+python -V
 ```
 
 ### `Step 1`: Clone the Steadfast Stoic Monorepo
