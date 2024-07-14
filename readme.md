@@ -10,6 +10,7 @@ Legend:
 🟢 Available/Implemented
 🟡 In Progress
 🔵 Planned
+⚡ Requested by our users
 
 ### Quick Status (Updated: 14-07-2024)
 
@@ -21,21 +22,25 @@ Legend:
 
 ### What Works? (Updated: 14-07-2024)
 
-| Feature                           | Flattrade | Shoonya (Finvasia) | Dhan |
-| --------------------------------- | --------- | ------------------ | ---- |
-| **Trading Operations**            |
-| Buy/Sell at market price          | 🟢        | 🟢                 | 🟢   |
-| Place limit orders                | 🟢        | 🟢                 | 🟢   |
-| Cancel orders                     | 🟢        | 🟢                 | 🟢   |
-| Close all positions               | 🟢        | 🟢                 | 🟢   |
-| One-click trading buttons         | 🟢        | 🟢                 | 🟢   |
-| **Order Management**              |
-| Kill switch (client-side)         | 🟢        | 🟢                 | 🟢   |
-| Select strikes                    | 🟢        | 🟢                 | 🟢   |
-| Automatic ATM strike selection    | 🟢        | 🟢                 | 🟢   |
-| **Real-Time Market Data**         |
-| LTP for underlying                | 🟢        | 🔵                 | 🔵   |
-| LTP for selected call/put strikes | 🟢        | 🔵                 | 🔵   |
+| Feature                             | Flattrade | Shoonya (Finvasia) | Dhan |
+| ----------------------------------- | --------- | ------------------ | ---- |
+| **Trading Operations**              |
+| Buy/Sell at market price            | 🟢        | 🟢                 | 🟢   |
+| Place limit orders                  | 🟢        | 🟢                 | 🟢   |
+| Cancel orders                       | 🟢        | 🟢                 | 🟢   |
+| Close all positions                 | 🟢        | 🟢                 | 🟢   |
+| One-click trading buttons           | 🟢        | 🟢                 | 🟢   |
+| Target price                        | 🟡        | 🟡                 | 🟡   |
+| Stoploss price                      | 🟡        | 🟡                 | 🟡   |
+| Underlying & Futures based Target   | ⚡        | ⚡                 | ⚡   |
+| Underlying & Futures based Stoploss | ⚡        | ⚡                 | ⚡   |
+| **Order Management**                |
+| Kill switch (client-side)           | 🟢        | 🟢                 | 🟢   |
+| Select strikes                      | 🟢        | 🟢                 | 🟢   |
+| Automatic ATM strike selection      | 🟢        | 🟢                 | 🟢   |
+| **Real-Time Market Data**           |
+| LTP for underlying                  | 🟢        | 🔵                 | 🔵   |
+| LTP for selected call/put strikes   | 🟢        | 🔵                 | 🔵   |
 
 #### Note:
 
@@ -63,7 +68,6 @@ Legend:
 # Join Our Telegram Channel
 
 Stay updated by joining our [Telegram Channel](https://t.me/steadfaststoic).
-
 
 ## Steps to run the app
 
