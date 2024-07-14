@@ -6,31 +6,41 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-stoic-api**](https://github.com/narenkram/steadfast-stoic-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status: (Updated on 13-07-2024)
+Legend:
+🟢 Available/Implemented
+🟡 In Progress
+🔵 Planned
 
-- Dhan - 🟢 Partial Trading Capabilities
-- Flattrade - 🟢 Partial Trading Capabilities
-- Shoonya (Finvasia) - 🟡 Implementation on progress
-- Websocket - 🟢 Available for Flattrade
-- Multiple Websocket - 🔵 Will add soon
+### Quick Status (Updated: 14-07-2024)
 
-### What works? (Updated on 13-07-2024)
+| Broker             | Trading Capabilities | Realtime Market LTP |
+| ------------------ | -------------------- | ------------------- |
+| Flattrade          | 🟢 Available         | 🟢 Available        |
+| Shoonya (Finvasia) | 🟢 Available         | 🔵 Planned          |
+| Dhan               | 🟢 Available         | 🟡 In Progress      |
 
-👉 All these basic operations now work well for `flattrade`, you can trade [NIFTY, BANKNIFTY, FINIFTY]:
+### What Works? (Updated: 14-07-2024)
 
-- ✅ kill switch
-- ✅ buy/sell market price
-- ✅ cancel orders
-- ✅ place limit on dropdown
-- ✅ select strikes
-- ✅ close all positions
-- ✅ 1 click buttons for buy/sell/cancel/close
-- ✅ ltp for underlying, selected call/put strikes 
-- ✅ automatic atm strike selection 
+| Feature                           | Flattrade | Shoonya (Finvasia) | Dhan |
+| --------------------------------- | --------- | ------------------ | ---- |
+| **Trading Operations**            |
+| Buy/Sell at market price          | 🟢        | 🟢                 | 🟢   |
+| Place limit orders                | 🟢        | 🟢                 | 🟢   |
+| Cancel orders                     | 🟢        | 🟢                 | 🟢   |
+| Close all positions               | 🟢        | 🟢                 | 🟢   |
+| One-click trading buttons         | 🟢        | 🟢                 | 🟢   |
+| **Order Management**              |
+| Kill switch (client-side)         | 🟢        | 🟢                 | 🟢   |
+| Select strikes                    | 🟢        | 🟢                 | 🟢   |
+| Automatic ATM strike selection    | 🟢        | 🟢                 | 🟢   |
+| **Real-Time Market Data**         |
+| LTP for underlying                | 🟢        | 🔵                 | 🔵   |
+| LTP for selected call/put strikes | 🟢        | 🔵                 | 🔵   |
 
 #### Note:
 
-kill switch works on client side only, you will still be able to trade from your broker terminal.
+- kill switch works on client side only, you will still be able to trade from your broker terminal.
+- All these symbols can be traded: NIFTY, BANKNIFTY, FINIFTY, MIDCPNIFTY NIFTYNXT50, SENSEX, BANKEX and SENSEX50.
 
 # App Screenshots
 
@@ -42,6 +52,10 @@ kill switch works on client side only, you will still be able to trade from your
 
 ![Preview in Dark Mode](preview_dark.png)
 
+## Add Broker
+
+![Preview in Add Broker](preview_addbroker_light.png)
+
 ## Light Mode
 
 ![Preview in Light Mode](preview_light.png)
@@ -50,22 +64,6 @@ kill switch works on client side only, you will still be able to trade from your
 
 Stay updated by joining our [Telegram Channel](https://t.me/steadfaststoic).
 
-### Get your API Key from your Broker and replace API Key in steadfast-stoic-api/.env
-
-```
-DHAN_CLIENT_ID = "Your_Dhan_Client_ID"
-DHAN_API_TOKEN = "Your_Dhan_API_Token"
-
-
-FLATTRADE_CLIENT_ID = "Your_Flattrade_Client_ID"
-FLATTRADE_API_KEY = "Your_Flattrade_API_Key"
-FLATTRADE_API_SECRET = "Your_Flattrade_API_Secret"
-```
-
-### Redirect URL for API
-
-- `http://localhost:5173/redirect?`
-- Register this redirect URL in your broker's API Key creation process.
 
 ## Steps to run the app
 
