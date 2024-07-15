@@ -30,6 +30,7 @@ Legend:
 | Cancel orders                       | 🟢        | 🟢                 | 🟢   |
 | Close all positions                 | 🟢        | 🟢                 | 🟢   |
 | One-click trading buttons           | 🟢        | 🟢                 | 🟢   |
+| Live MTM / PNL                      | 🟢        | 🟡                 | 🟡   |
 | Target price                        | 🟡        | 🟡                 | 🟡   |
 | Stoploss price                      | 🟡        | 🟡                 | 🟡   |
 | Underlying & Futures based Target   | ⚡        | ⚡                 | ⚡   |
