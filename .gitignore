@@ -57,6 +57,7 @@ build/
 *.pyo
 *.pyd
 *.whl
+!steadfast-websocket/flattrade/dist/Api-0.0.3-py2.py3-none-any.whl
 *.venv/
 .venv/
 env/

@@ -20,7 +20,7 @@ Legend:
 | Shoonya (Finvasia) | 🟢 Available         | 🔵 Planned          |
 | Dhan               | 🟢 Available         | 🟡 In Progress      |
 
-### What Works? (Updated: 14-07-2024)
+### What Works? (Updated: 16-07-2024)
 
 | Feature                             | Flattrade | Shoonya (Finvasia) | Dhan |
 | ----------------------------------- | --------- | ------------------ | ---- |
@@ -31,8 +31,8 @@ Legend:
 | Close all positions                 | 🟢        | 🟢                 | 🟢   |
 | One-click trading buttons           | 🟢        | 🟢                 | 🟢   |
 | Live MTM / PNL                      | 🟢        | 🟡                 | 🟡   |
-| Target price                        | 🟡        | 🟡                 | 🟡   |
-| Stoploss price                      | 🟡        | 🟡                 | 🟡   |
+| Target price                        | 🟢        | 🟡                 | 🟡   |
+| Stoploss price                      | 🟢        | 🟡                 | 🟡   |
 | Underlying & Futures based Target   | ⚡        | ⚡                 | ⚡   |
 | Underlying & Futures based Stoploss | ⚡        | ⚡                 | ⚡   |
 | **Order Management**                |
