@@ -47,6 +47,7 @@ Legend:
 
 - kill switch works on client side only, you will still be able to trade from your broker terminal.
 - All these symbols can be traded: NIFTY, BANKNIFTY, FINIFTY, MIDCPNIFTY NIFTYNXT50, SENSEX, BANKEX and SENSEX50.
+- **_If you have added and connected to flattrade, you will be able to use it's websocket for Dhan & Shoonya to get realtime LTP data._**
 
 # App Screenshots
 
