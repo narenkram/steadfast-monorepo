@@ -6,42 +6,36 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-stoic-api**](https://github.com/narenkram/steadfast-stoic-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
+### Quick Status (Updated: 16-07-2024)
+
 Legend:
 🟢 Available/Implemented
 🟡 In Progress
 🔵 Planned
 ⚡ Requested by our users
-
-### Quick Status (Updated: 14-07-2024)
-
-| Broker             | Trading Capabilities | Realtime Market LTP |
-| ------------------ | -------------------- | ------------------- |
-| Flattrade          | 🟢 Available         | 🟢 Available        |
-| Shoonya (Finvasia) | 🟢 Available         | 🔵 Planned          |
-| Dhan               | 🟢 Available         | 🟡 In Progress      |
-
-### What Works? (Updated: 16-07-2024)
+🔴 Not Currently Considered
 
 | Feature                             | Flattrade | Shoonya (Finvasia) | Dhan |
 | ----------------------------------- | --------- | ------------------ | ---- |
 | **Trading Operations**              |
 | Buy/Sell at market price            | 🟢        | 🟢                 | 🟢   |
-| Place limit orders                  | 🟢        | 🟢                 | 🟢   |
+| Place limit orders (dropdown menu)  | 🟢        | 🟢                 | 🟢   |
 | Cancel orders                       | 🟢        | 🟢                 | 🟢   |
 | Close all positions                 | 🟢        | 🟢                 | 🟢   |
 | One-click trading buttons           | 🟢        | 🟢                 | 🟢   |
-| Live MTM / PNL                      | 🟢        | 🟡                 | 🟡   |
-| Target price                        | 🟢        | 🟡                 | 🟡   |
-| Stoploss price                      | 🟢        | 🟡                 | 🟡   |
-| Underlying & Futures based Target   | ⚡        | ⚡                 | ⚡   |
-| Underlying & Futures based Stoploss | ⚡        | ⚡                 | ⚡   |
+| Live MTM / PNL                      | 🟢        | 🟡                 | 🔵   |
+| Target price                        | 🟢        | 🟡                 | 🔴   |
+| Stoploss price                      | 🟢        | 🟡                 | 🔴   |
+| Trailing Stoploss                   | 🔵        | 🔵                 | 🔴   |
+| Underlying & Futures based Target   | ⚡        | ⚡                 | 🔴   |
+| Underlying & Futures based Stoploss | ⚡        | ⚡                 | 🔴   |
 | **Order Management**                |
 | Kill switch (client-side)           | 🟢        | 🟢                 | 🟢   |
 | Select strikes                      | 🟢        | 🟢                 | 🟢   |
-| Automatic ATM strike selection      | 🟢        | 🟡                 | 🟡   |
+| Automatic ATM strike selection      | 🟢        | 🟡                 | 🔴   |
 | **Real-Time Market Data**           |
-| LTP for underlying                  | 🟢        | 🔵                 | 🔵   |
-| LTP for selected call/put strikes   | 🟢        | 🔵                 | 🔵   |
+| LTP for underlying                  | 🟢        | 🟡                 | 🔵   |
+| LTP for selected call/put strikes   | 🟢        | 🟡                 | 🔵   |
 
 #### Note:
 
