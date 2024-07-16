@@ -38,7 +38,7 @@ Legend:
 | **Order Management**                |
 | Kill switch (client-side)           | 🟢        | 🟢                 | 🟢   |
 | Select strikes                      | 🟢        | 🟢                 | 🟢   |
-| Automatic ATM strike selection      | 🟢        | 🟢                 | 🟢   |
+| Automatic ATM strike selection      | 🟢        | 🟡                 | 🟡   |
 | **Real-Time Market Data**           |
 | LTP for underlying                  | 🟢        | 🔵                 | 🔵   |
 | LTP for selected call/put strikes   | 🟢        | 🔵                 | 🔵   |
