@@ -24,8 +24,8 @@ Legend:
 | Close all positions                 | 🟢        | 🟢                 | 🟢   |
 | One-click trading buttons           | 🟢        | 🟢                 | 🟢   |
 | Live MTM / PNL                      | 🟢        | 🟡                 | 🔵   |
-| Target price                        | 🟡        | 🟡                 | 🔴   |
-| Stoploss price                      | 🟡        | 🟡                 | 🔴   |
+| Target price                        | 🟢        | 🟡                 | 🔴   |
+| Stoploss price                      | 🟢        | 🟡                 | 🔴   |
 | Trailing Stoploss                   | 🔵        | 🔵                 | 🔴   |
 | Underlying & Futures based Target   | ⚡        | ⚡                 | 🔴   |
 | Underlying & Futures based Stoploss | ⚡        | ⚡                 | 🔴   |
