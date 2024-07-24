@@ -45,7 +45,8 @@ if not exist "steadfast-websocket\.git" (
 )
 cd steadfast-websocket
 
-echo Installing WebSocket dependencies...
+echo Installing WebSocket...
+echo Installing Flattrade dependencies...
 cd flattrade
 call pip install -r requirements.txt
 if !errorlevel! neq 0 (
