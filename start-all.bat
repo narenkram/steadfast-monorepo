@@ -15,6 +15,14 @@ echo Invalid choice. Please try again.
 goto menu
 
 :update
+REM Update the entire monorepo
+echo Updating steadfast-stoic-monorepo...
+git pull https://github.com/narenkram/steadfast-stoic-monorepo main
+if !errorlevel! neq 0 (
+    echo Error updating steadfast-stoic-monorepo.
+    goto :error
+)
+
 REM Update steadfast-stoic-app
 echo Updating steadfast-stoic-app...
 cd steadfast-stoic-app
