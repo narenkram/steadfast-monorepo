@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 :menu
 echo Choose an option:
-echo 1. Update the app, api and websocket (Recommended once a day)
+echo 1. Update the everything (monorepo, app, api, websocket) (Recommended once a day)
 echo 2. Run existing version
 echo 3. Exit
 set /p choice="Enter your choice (1, 2, or 3): "
