@@ -61,6 +61,10 @@ REM Start the Flattrade websocket in a new command prompt window
 echo Starting Flattrade websocket...
 start /min cmd /c "cd steadfast-websocket\flattrade && python flattrade-websocket.py"
 
+REM Start the Shoonya websocket in a new command prompt window
+echo Starting Shoonya websocket...
+start /min cmd /c "cd steadfast-websocket\shoonya && python shoonya-websocket.py"
+
 REM Wait for a few seconds to allow the app to start
 timeout /t 5
 

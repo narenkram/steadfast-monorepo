@@ -117,7 +117,8 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 
 1. Starts the steadfast-stoic-app at `localhost: 5173`
 2. Starts the steadfast-stoic-api server at `localhost: 3000`
-3. Starts the steadfast-websocket server at `localhost: 8765`
+3. Starts the flattrade-websocket server at `localhost: 8765`
+4. Starts the shoonya-websocket server at `localhost: 8766`
 
 ### `Step 4`: Stop
 
