@@ -2,16 +2,14 @@
 setlocal enabledelayedexpansion
 
 REM Clone the app repository and install dependencies
-echo Cloning and installing app...
-cd steadfast-stoic-app
-git init
-git remote add origin https://github.com/narenkram/steadfast-stoic-app.git
-git fetch
-git checkout -b main origin/main
-if !errorlevel! neq 0 (
-    echo Error occurred while cloning app repository.
-    goto :error
+echo Checking app repository...
+if not exist "steadfast-stoic-app\.git" (
+    echo Cloning app...
+    git clone https://github.com/narenkram/steadfast-stoic-app.git
+) else (
+    echo App repository already exists, skipping clone...
 )
+cd steadfast-stoic-app
 echo Installing app dependencies...
 call npm install
 if !errorlevel! neq 0 (
@@ -21,16 +19,14 @@ if !errorlevel! neq 0 (
 cd ..
 
 REM Clone the API repository and install dependencies
-echo Cloning and installing API...
-cd steadfast-stoic-api
-git init
-git remote add origin https://github.com/narenkram/steadfast-stoic-api.git
-git fetch
-git checkout -b main origin/main
-if !errorlevel! neq 0 (
-    echo Error occurred while cloning API repository.
-    goto :error
+echo Checking API repository...
+if not exist "steadfast-stoic-api\.git" (
+    echo Cloning API...
+    git clone https://github.com/narenkram/steadfast-stoic-api.git
+) else (
+    echo API repository already exists, skipping clone...
 )
+cd steadfast-stoic-api
 echo Installing API dependencies...
 call npm install
 if !errorlevel! neq 0 (
@@ -40,18 +36,16 @@ if !errorlevel! neq 0 (
 cd ..
 
 REM Clone the WebSocket repository and install dependencies
-echo Cloning and installing WebSocket...
-cd steadfast-websocket
-git init
-git remote add origin https://github.com/narenkram/steadfast-websocket.git
-git fetch
-git checkout -b main origin/main
-if !errorlevel! neq 0 (
-    echo Error occurred while cloning WebSocket repository.
-    goto :error
+echo Checking WebSocket repository...
+if not exist "steadfast-websocket\.git" (
+    echo Cloning WebSocket...
+    git clone https://github.com/narenkram/steadfast-websocket.git
+) else (
+    echo WebSocket repository already exists, skipping clone...
 )
-echo Installing WebSocket...
-echo Installing Flattrade dependencies...
+cd steadfast-websocket
+
+echo Installing WebSocket dependencies...
 cd flattrade
 call pip install -r requirements.txt
 if !errorlevel! neq 0 (
