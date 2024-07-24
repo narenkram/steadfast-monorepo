@@ -50,11 +50,21 @@ if !errorlevel! neq 0 (
     echo Error occurred while cloning WebSocket repository.
     goto :error
 )
-echo Installing WebSocket dependencies...
+echo Installing WebSocket...
+echo Installing Flattrade dependencies...
 cd flattrade
 call pip install -r requirements.txt
 if !errorlevel! neq 0 (
-    echo Error occurred while installing WebSocket dependencies.
+    echo Error occurred while installing WebSocket dependencies for Flattrade.
+    goto :error
+)
+cd ..
+
+echo Installing Shoonya dependencies...
+cd shoonya
+call pip install -r requirements.txt
+if !errorlevel! neq 0 (
+    echo Error occurred while installing WebSocket dependencies for Shoonya.
     goto :error
 )
 cd ..\..
