@@ -1,0 +1,9 @@
+[submodule "steadfast-app"]
+path = steadfast-app
+url = https://github.com/narenkram/steadfast-app.git
+[submodule "steadfast-api"]
+path = steadfast-api
+url = https://github.com/narenkram/steadfast-api.git
+[submodule "steadfast-websocket"]
+path = steadfast-websocket
+url = https://github.com/narenkram/steadfast-websocket.git
