@@ -6,7 +6,7 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-api**](https://github.com/narenkram/steadfast-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status (Updated: 24-07-2024)
+### Quick Status (Updated: 26-07-2024)
 
 Legend:
 🟢 Available/Implemented
@@ -15,27 +15,26 @@ Legend:
 ⚡ Requested by our users
 🔴 Not Currently Considered
 
-| Feature                             | Flattrade | Shoonya (Finvasia) | Dhan |
-| ----------------------------------- | --------- | ------------------ | ---- |
-| **Trading Operations**              |
-| Buy/Sell at market price            | 🟢        | 🟢                 | 🟢   |
-| Place limit orders (dropdown menu)  | 🟢        | 🟢                 | 🟢   |
-| Cancel orders                       | 🟢        | 🟢                 | 🟢   |
-| Close all positions                 | 🟢        | 🟢                 | 🟢   |
-| One-click trading buttons           | 🟢        | 🟢                 | 🟢   |
-| Live MTM / PNL                      | 🟢        | 🟢                 | 🔵   |
-| Target price                        | 🟢        | 🟢                 | 🔴   |
-| Stoploss price                      | 🟢        | 🟢                 | 🔴   |
-| Trailing Stoploss                   | 🟡        | 🟡                 | 🔴   |
-| Underlying & Futures based Target   | ⚡        | ⚡                 | 🔴   |
-| Underlying & Futures based Stoploss | ⚡        | ⚡                 | 🔴   |
-| **Order Management**                |
-| Kill switch (client-side)           | 🟢        | 🟢                 | 🟢   |
-| Select strikes                      | 🟢        | 🟢                 | 🟢   |
-| Automatic ATM strike selection      | 🟢        | 🟢                 | 🔴   |
-| **Real-Time Market Data**           |
-| LTP for underlying                  | 🟢        | 🟢                 | 🔵   |
-| LTP for selected call/put strikes   | 🟢        | 🟢                 | 🔵   |
+| Feature                                      | Flattrade | Shoonya (Finvasia) | Dhan |
+| -------------------------------------------- | --------- | ------------------ | ---- |
+| **Trading Operations**                       |
+| Buy/Sell at market price                     | 🟢        | 🟢                 | 🟢   |
+| Place limit orders (dropdown menu)           | 🟢        | 🟢                 | 🟢   |
+| Cancel orders                                | 🟢        | 🟢                 | 🟢   |
+| Close all positions                          | 🟢        | 🟢                 | 🟢   |
+| One-click trading buttons                    | 🟢        | 🟢                 | 🟢   |
+| Live MTM / PNL                               | 🟢        | 🟢                 | 🟡   |
+| Target price                                 | 🟢        | 🟢                 | 🟡   |
+| Stoploss price                               | 🟢        | 🟢                 | 🟡   |
+| Trailing Stoploss                            | 🔵        | 🔵                 | 🟡   |
+| Underlying & Futures based Target & Stoploss | ⚡        | ⚡                 | ⚡   |
+| **Order Management**                         |
+| Kill switch (client-side)                    | 🟢        | 🟢                 | 🟢   |
+| Select strikes                               | 🟢        | 🟢                 | 🟢   |
+| Automatic ATM strike selection               | 🟢        | 🟢                 | 🟡   |
+| **Real-Time Market Data**                    |
+| LTP for underlying                           | 🟢        | 🟢                 | 🟡   |
+| LTP for selected call/put strikes            | 🟢        | 🟢                 | 🟡   |
 
 #### Note:
 
