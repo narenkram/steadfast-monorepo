@@ -20,26 +20,26 @@ function menu {
 
 function update {
     # Update the entire monorepo
-    echo "Updating steadfast-stoic-monorepo..."
-    git pull https://github.com/narenkram/steadfast-stoic-monorepo main || {
-        echo "Error updating steadfast-stoic-monorepo."
+    echo "Updating steadfast-monorepo..."
+    git pull https://github.com/narenkram/steadfast-monorepo main || {
+        echo "Error updating steadfast-monorepo."
         error
     }
 
-    # Update steadfast-stoic-app
-    echo "Updating steadfast-stoic-app..."
-    cd steadfast-stoic-app
-    git pull https://github.com/narenkram/steadfast-stoic-app main || {
-        echo "Error updating steadfast-stoic-app."
+    # Update steadfast-app
+    echo "Updating steadfast-app..."
+    cd steadfast-app
+    git pull https://github.com/narenkram/steadfast-app main || {
+        echo "Error updating steadfast-app."
         error
     }
     cd ..
 
-    # Update steadfast-stoic-api
-    echo "Updating steadfast-stoic-api..."
-    cd steadfast-stoic-api
-    git pull https://github.com/narenkram/steadfast-stoic-api main || {
-        echo "Error updating steadfast-stoic-api."
+    # Update steadfast-api
+    echo "Updating steadfast-api..."
+    cd steadfast-api
+    git pull https://github.com/narenkram/steadfast-api main || {
+        echo "Error updating steadfast-api."
         error
     }
     cd ..
@@ -60,11 +60,11 @@ function update {
 function run {
     # Start the API in a new terminal window
     echo "Starting API..."
-    gnome-terminal -- bash -c "cd steadfast-stoic-api && node server.js"
+    gnome-terminal -- bash -c "cd steadfast-api && node server.js"
 
     # Start the app in a new terminal window
     echo "Starting app..."
-    gnome-terminal -- bash -c "cd steadfast-stoic-app && npm run dev"
+    gnome-terminal -- bash -c "cd steadfast-app && npm run dev"
 
     # Start the Flattrade websocket in a new terminal window
     echo "Starting Flattrade websocket..."

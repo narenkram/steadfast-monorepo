@@ -2,8 +2,8 @@
 
 This repository is a monorepo containing three main projects:
 
-1. [**steadfast-stoic-app**](https://github.com/narenkram/steadfast-stoic-app): The frontend application.
-2. [**steadfast-stoic-api**](https://github.com/narenkram/steadfast-stoic-api): The backend API server.
+1. [**steadfast-app**](https://github.com/narenkram/steadfast-app): The frontend application.
+2. [**steadfast-api**](https://github.com/narenkram/steadfast-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
 ### Quick Status (Updated: 24-07-2024)
@@ -62,7 +62,7 @@ Legend:
 
 # Join Our Telegram Channel
 
-Stay updated by joining our [Telegram Channel](https://t.me/steadfaststoic).
+Stay updated by joining our [Telegram Channel](https://t.me/steadfastapp).
 
 ## Steps to run the app
 
@@ -88,7 +88,7 @@ node -v && npm -v
 python -V
 ```
 
-### `Step 1`: Clone the Steadfast Stoic Monorepo
+### `Step 1`: Clone the Steadfast Monorepo
 
 1. Download & Install [GitHub Desktop](https://desktop.github.com/)
 2. On top right of this repo click "Code" > "Open with GitHub Desktop"
@@ -101,9 +101,9 @@ Double-click the `install-all.bat` file or run it from the command prompt.
 
 #### What it does:
 
-1. Clones the steadfast-stoic-app repository
+1. Clones the steadfast-app repository
 2. Installs app dependencies
-3. Clones the steadfast-stoic-api repository
+3. Clones the steadfast-api repository
 4. Installs API dependencies
 5. Clones the steadfast-websocket repository
 6. Installs WebSocket dependencies
@@ -114,8 +114,8 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 
 #### What it does:
 
-1. Starts the steadfast-stoic-app at `localhost: 5173`
-2. Starts the steadfast-stoic-api server at `localhost: 3000`
+1. Starts the steadfast-app at `localhost: 5173`
+2. Starts the steadfast-api server at `localhost: 3000`
 3. Starts the flattrade-websocket server at `localhost: 8765`
 4. Starts the shoonya-websocket server at `localhost: 8766`
 

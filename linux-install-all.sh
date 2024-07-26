@@ -10,26 +10,26 @@ function error {
 
 # Clone the app repository and install dependencies
 echo "Checking app repository..."
-if [ ! -d "steadfast-stoic-app/.git" ]; then
+if [ ! -d "steadfast-app/.git" ]; then
     echo "Cloning app..."
-    git clone https://github.com/narenkram/steadfast-stoic-app.git || error
+    git clone https://github.com/narenkram/steadfast-app.git || error
 else
     echo "App repository already exists, skipping clone..."
 fi
-cd steadfast-stoic-app
+cd steadfast-app
 echo "Installing app dependencies..."
 npm install || error
 cd ..
 
 # Clone the API repository and install dependencies
 echo "Checking API repository..."
-if [ ! -d "steadfast-stoic-api/.git" ]; then
+if [ ! -d "steadfast-api/.git" ]; then
     echo "Cloning API..."
-    git clone https://github.com/narenkram/steadfast-stoic-api.git || error
+    git clone https://github.com/narenkram/steadfast-api.git || error
 else
     echo "API repository already exists, skipping clone..."
 fi
-cd steadfast-stoic-api
+cd steadfast-api
 echo "Installing API dependencies..."
 npm install || error
 cd ..

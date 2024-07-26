@@ -16,29 +16,29 @@ goto menu
 
 :update
 REM Update the entire monorepo
-echo Updating steadfast-stoic-monorepo...
-git pull https://github.com/narenkram/steadfast-stoic-monorepo main
+echo Updating steadfast-monorepo...
+git pull https://github.com/narenkram/steadfast-monorepo main
 if !errorlevel! neq 0 (
-    echo Error updating steadfast-stoic-monorepo.
+    echo Error updating steadfast-monorepo.
     goto :error
 )
 
-REM Update steadfast-stoic-app
-echo Updating steadfast-stoic-app...
-cd steadfast-stoic-app
-git pull https://github.com/narenkram/steadfast-stoic-app main
+REM Update steadfast-app
+echo Updating steadfast-app...
+cd steadfast-app
+git pull https://github.com/narenkram/steadfast-app main
 if !errorlevel! neq 0 (
-    echo Error updating steadfast-stoic-app.
+    echo Error updating steadfast-app.
     goto :error
 )
 cd ..
 
-REM Update steadfast-stoic-api
-echo Updating steadfast-stoic-api...
-cd steadfast-stoic-api
-git pull https://github.com/narenkram/steadfast-stoic-api main
+REM Update steadfast-api
+echo Updating steadfast-api...
+cd steadfast-api
+git pull https://github.com/narenkram/steadfast-api main
 if !errorlevel! neq 0 (
-    echo Error updating steadfast-stoic-api.
+    echo Error updating steadfast-api.
     goto :error
 )
 cd ..
@@ -59,11 +59,11 @@ goto menu
 :run
 REM Start the API in a new command prompt window
 echo Starting API...
-start /min cmd /c "cd steadfast-stoic-api && node server.js"
+start /min cmd /c "cd steadfast-api && node server.js"
 
 REM Start the app in a new command prompt window
 echo Starting app...
-start /min cmd /c "cd steadfast-stoic-app && npm run dev"
+start /min cmd /c "cd steadfast-app && npm run dev"
 
 REM Start the Flattrade websocket in a new command prompt window
 echo Starting Flattrade websocket...

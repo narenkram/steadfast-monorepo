@@ -78,11 +78,11 @@ dump.rdb
 *.csv
 
 # Ignore specific directories in the monorepo
-/steadfast-stoic-app/node_modules/
-/steadfast-stoic-api/node_modules/
-/steadfast-dhan-websocket/__pycache__/
-/steadfast-dhan-websocket/env/
-/steadfast-dhan-websocket/.venv/
+/steadfast-app/node_modules/
+/steadfast-api/node_modules/
+/steadfast-websocket/__pycache__/
+/steadfast-websocket/env/
+/steadfast-websocket/.venv/
 
 # Ignore nested .git directories
 **/.git
