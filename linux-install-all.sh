@@ -47,18 +47,21 @@ cd steadfast-websocket
 echo "Installing WebSocket dependencies..."
 echo "Installing Flattrade dependencies..."
 cd flattrade
-chmod +x api_helper.py
 chmod +x flattrade-websocket.py
 pip install -r requirements.txt || error
 cd ..
 
 echo "Installing Shoonya dependencies..."
 cd shoonya
-chmod +x api_helper.py
 chmod +x shoonya-websocket.py
 pip install -r requirements.txt || error
-cd ../..
+cd ..
 
+echo "Installing Dhanhq dependencies..."
+cd dhanhq
+chmod +x dhan-websocket.py
+pip install -r requirements.txt || error
+cd ../.. 
 echo "Repositories cloned and dependencies installed successfully."
 
 # End of script
