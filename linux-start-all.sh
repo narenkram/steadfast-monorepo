@@ -60,7 +60,7 @@ function update {
 function run {
     # Start the API in a new terminal window
     echo "Starting API..."
-    gnome-terminal -- bash -c "cd steadfast-api && node server.js; exec bash" || { echo "Failed to start API."; error; }
+    gnome-terminal -- bash -c "cd steadfast-api && sleep 2 && node server.js; exec bash" || { echo "Failed to start API."; error; }
 
     # Start the Flattrade websocket in a new terminal window
     echo "Starting Flattrade websocket..."
@@ -72,7 +72,7 @@ function run {
     
     # Start the app in a new terminal window
     echo "Starting app..."
-    gnome-terminal -- bash -c "cd steadfast-app && npm run dev; exec bash" || { echo "Failed to start app."; error; }
+    gnome-terminal -- bash -c "cd steadfast-app && sleep 2 && npm run dev; exec bash" || { echo "Failed to start app."; error; }
 
     # Wait for a few seconds to allow the app to start
     sleep 5
