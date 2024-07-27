@@ -46,6 +46,15 @@ if not exist "steadfast-websocket\.git" (
 cd steadfast-websocket
 
 echo Installing WebSocket...
+
+REM Install NorenRestApi without dependencies for Flattrade and Shoonya
+echo Installing NorenRestApi for Flattrade and Shoonya...
+pip install --no-deps NorenRestApi
+if !errorlevel! neq 0 (
+    echo Error occurred while installing NorenRestApi.
+    goto :error
+)
+
 echo Installing Flattrade dependencies...
 cd flattrade
 call pip install -r requirements.txt
