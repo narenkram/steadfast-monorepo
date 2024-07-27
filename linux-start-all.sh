@@ -60,19 +60,19 @@ function update {
 function run {
     # Start the API in a new terminal window
     echo "Starting API..."
-    gnome-terminal -- bash -c "cd steadfast-api && node server.js" || { echo "Failed to start API."; error; }
+    gnome-terminal -- bash -c "cd steadfast-api && node server.js; exec bash" || { echo "Failed to start API."; error; }
 
     # Start the Flattrade websocket in a new terminal window
     echo "Starting Flattrade websocket..."
-    gnome-terminal -- bash -c "cd steadfast-websocket/flattrade && python3 flattrade-websocket.py" || { echo "Failed to start Flattrade websocket."; error; }
+    gnome-terminal -- bash -c "cd steadfast-websocket/flattrade && python3 flattrade-websocket.py; exec bash" || { echo "Failed to start Flattrade websocket."; error; }
 
     # Start the Shoonya websocket in a new terminal window
     echo "Starting Shoonya websocket..."
-    gnome-terminal -- bash -c "cd steadfast-websocket/shoonya && python3 shoonya-websocket.py" || { echo "Failed to start Shoonya websocket."; error; }
+    gnome-terminal -- bash -c "cd steadfast-websocket/shoonya && python3 shoonya-websocket.py; exec bash" || { echo "Failed to start Shoonya websocket."; error; }
     
     # Start the app in a new terminal window
     echo "Starting app..."
-    gnome-terminal -- bash -c "cd steadfast-app && npm run dev" || { echo "Failed to start app."; error; }
+    gnome-terminal -- bash -c "cd steadfast-app && npm run dev; exec bash" || { echo "Failed to start app."; error; }
 
     # Wait for a few seconds to allow the app to start
     sleep 5
