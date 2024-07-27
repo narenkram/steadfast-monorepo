@@ -44,6 +44,10 @@ else
 fi
 cd steadfast-websocket
 
+# Install NorenRestApi without dependencies
+echo "Installing NorenRestApi..."
+pip install --no-deps NorenRestApi || error
+
 echo "Installing WebSocket dependencies..."
 echo "Installing Flattrade dependencies..."
 cd flattrade
