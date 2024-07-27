@@ -8,40 +8,37 @@ function error {
     exit 1
 }
 
+# Function to clone a repository if it doesn't exist
+function clone_repo {
+    local repo_url=$1
+    local repo_dir=$2
+
+    echo "Checking $repo_dir repository..."
+    if [ ! -d "$repo_dir/.git" ]; then
+        echo "Cloning $repo_dir..."
+        rm -rf $repo_dir  # Remove existing directory if it exists
+        git clone $repo_url $repo_dir || error
+    else
+        echo "$repo_dir repository already exists, skipping clone..."
+    fi
+}
+
 # Clone the app repository and install dependencies
-echo "Checking app repository..."
-if [ ! -d "steadfast-app/.git" ]; then
-    echo "Cloning app..."
-    git clone https://github.com/narenkram/steadfast-app.git || error
-else
-    echo "App repository already exists, skipping clone..."
-fi
+clone_repo "https://github.com/narenkram/steadfast-app.git" "steadfast-app"
 cd steadfast-app
 echo "Installing app dependencies..."
 npm install || error
 cd ..
 
 # Clone the API repository and install dependencies
-echo "Checking API repository..."
-if [ ! -d "steadfast-api/.git" ]; then
-    echo "Cloning API..."
-    git clone https://github.com/narenkram/steadfast-api.git || error
-else
-    echo "API repository already exists, skipping clone..."
-fi
+clone_repo "https://github.com/narenkram/steadfast-api.git" "steadfast-api"
 cd steadfast-api
 echo "Installing API dependencies..."
 npm install || error
 cd ..
 
 # Clone the WebSocket repository and install dependencies
-echo "Checking WebSocket repository..."
-if [ ! -d "steadfast-websocket/.git" ]; then
-    echo "Cloning WebSocket..."
-    git clone https://github.com/narenkram/steadfast-websocket.git || error
-else
-    echo "WebSocket repository already exists, skipping clone..."
-fi
+clone_repo "https://github.com/narenkram/steadfast-websocket.git" "steadfast-websocket"
 cd steadfast-websocket
 
 # Install NorenRestApi without dependencies
