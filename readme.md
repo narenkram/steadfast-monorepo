@@ -15,26 +15,26 @@ Legend:
 ⚡ Requested by our users
 🔴 Not Currently Considered
 
-| Feature                                      | Flattrade | Shoonya (Finvasia) | Dhan |
-| -------------------------------------------- | --------- | ------------------ | ---- |
+| Feature                                      | Flattrade | Shoonya (Finvasia) |
+| -------------------------------------------- | --------- | ------------------ |
 | **Trading Operations**                       |
-| Buy/Sell at market price                     | 🟢        | 🟢                 | 🟢   |
-| Place limit orders (dropdown menu)           | 🟢        | 🟢                 | 🟢   |
-| Cancel orders                                | 🟢        | 🟢                 | 🟢   |
-| Close all positions                          | 🟢        | 🟢                 | 🟢   |
-| One-click trading buttons                    | 🟢        | 🟢                 | 🟢   |
-| Live MTM / PNL                               | 🟢        | 🟢                 | 🟡   |
-| Target price                                 | 🟢        | 🟢                 | 🟡   |
-| Stoploss price                               | 🟢        | 🟢                 | 🟡   |
-| Trailing Stoploss                            | 🔵        | 🔵                 | 🟡   |
-| Underlying & Futures based Target & Stoploss | ⚡        | ⚡                 | ⚡   |
+| Buy/Sell at market price                     | 🟢        | 🟢                 |
+| Place limit orders (dropdown menu)           | 🟢        | 🟢                 |
+| Cancel orders                                | 🟢        | 🟢                 |
+| Close all positions                          | 🟢        | 🟢                 |
+| One-click trading buttons                    | 🟢        | 🟢                 |
+| Live MTM / PNL                               | 🟢        | 🟢                 |
+| Target price                                 | 🟢        | 🟢                 |
+| Stoploss price                               | 🟢        | 🟢                 |
+| Trailing Stoploss                            | 🟡        | 🟡                 |
+| Underlying & Futures based Target & Stoploss | ⚡        | ⚡                 |
 | **Order Management**                         |
-| Kill switch (client-side)                    | 🟢        | 🟢                 | 🟢   |
-| Select strikes                               | 🟢        | 🟢                 | 🟢   |
-| Automatic ATM strike selection               | 🟢        | 🟢                 | 🟡   |
+| Kill switch (client-side)                    | 🟢        | 🟢                 |
+| Select strikes                               | 🟢        | 🟢                 |
+| Automatic ATM strike selection               | 🟢        | 🟢                 |
 | **Real-Time Market Data**                    |
-| LTP for underlying                           | 🟢        | 🟢                 | 🟡   |
-| LTP for selected call/put strikes            | 🟢        | 🟢                 | 🟡   |
+| LTP for underlying                           | 🟢        | 🟢                 |
+| LTP for selected call/put strikes            | 🟢        | 🟢                 |
 
 #### Note:
 

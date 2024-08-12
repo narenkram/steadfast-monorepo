@@ -56,12 +56,6 @@ echo "Installing Shoonya dependencies..."
 cd shoonya
 chmod +x shoonya-websocket.py
 pip install -r requirements.txt || error
-cd ..
-
-echo "Installing Dhanhq dependencies..."
-cd dhanhq
-chmod +x dhan-websocket.py
-pip install -r requirements.txt || error
 cd ../.. 
 echo "Repositories cloned and dependencies installed successfully."
 
