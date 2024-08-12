@@ -73,9 +73,9 @@ REM Start the Shoonya websocket in a new command prompt window
 echo Starting Shoonya websocket...
 start /min cmd /c "cd steadfast-websocket\shoonya && python shoonya-websocket.py"
 
-REM Start the Dhan websocket in a new command prompt window
-echo Starting Dhan websocket...
-start /min cmd /c "cd steadfast-websocket\dhanhq && python dhan-websocket.py"
+@REM REM Start the Dhan websocket in a new command prompt window
+@REM echo Starting Dhan websocket...
+@REM start /min cmd /c "cd steadfast-websocket\dhanhq && python dhan-websocket.py"
 
 REM Wait for a few seconds to allow the app to start
 timeout /t 5

@@ -71,8 +71,8 @@ function run {
     gnome-terminal -- bash -c "cd steadfast-websocket/shoonya && python3 shoonya-websocket.py; exec bash" || { echo "Failed to start Shoonya websocket."; error; }
     
     # Start the Dhan websocket in a new terminal window
-    echo "Starting Dhan websocket..."
-    gnome-terminal -- bash -c "cd steadfast-websocket/dhanhq && python3 dhan-websocket.py; exec bash" || { echo "Failed to start Dhan websocket."; error; }
+    # echo "Starting Dhan websocket..."
+    # gnome-terminal -- bash -c "cd steadfast-websocket/dhanhq && python3 dhan-websocket.py; exec bash" || { echo "Failed to start Dhan websocket."; error; }
 
     # Start the app in a new terminal window
     echo "Starting app..."
