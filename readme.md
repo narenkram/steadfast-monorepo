@@ -6,7 +6,7 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-api**](https://github.com/narenkram/steadfast-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status (Updated: 26-07-2024)
+### Quick Status (Updated: 13-08-2024)
 
 Legend:
 🟢 Available/Implemented
@@ -15,26 +15,42 @@ Legend:
 ⚡ Requested by our users
 🔴 Not Currently Considered
 
-| Feature                                      | Flattrade | Shoonya (Finvasia) |
-| -------------------------------------------- | --------- | ------------------ |
-| **Trading Operations**                       |
-| Buy/Sell at market price                     | 🟢        | 🟢                 |
-| Place limit orders (dropdown menu)           | 🟢        | 🟢                 |
-| Cancel orders                                | 🟢        | 🟢                 |
-| Close all positions                          | 🟢        | 🟢                 |
-| One-click trading buttons                    | 🟢        | 🟢                 |
-| Live MTM / PNL                               | 🟢        | 🟢                 |
-| Target price                                 | 🟢        | 🟢                 |
-| Stoploss price                               | 🟢        | 🟢                 |
-| Trailing Stoploss                            | 🟡        | 🟡                 |
-| Underlying & Futures based Target & Stoploss | ⚡        | ⚡                 |
-| **Order Management**                         |
-| Kill switch (client-side)                    | 🟢        | 🟢                 |
-| Select strikes                               | 🟢        | 🟢                 |
-| Automatic ATM strike selection               | 🟢        | 🟢                 |
-| **Real-Time Market Data**                    |
-| LTP for underlying                           | 🟢        | 🟢                 |
-| LTP for selected call/put strikes            | 🟢        | 🟢                 |
+| Feature                                            | Status |
+| -------------------------------------------------- | ------ |
+| **Supported Brokers**                              |        |
+| Flattrade                                          | 🟢     |
+| Shoonya (Finvasia)                                 | 🟢     |
+| ⚡ Other Brokers                                   | 🔴     |
+| **Trading Operations**                             |        |
+| Place Buy/Sell at market/limit orders              | 🟢     |
+| Cancel orders                                      | 🟢     |
+| Cancel selected orders                             | 🔵     |
+| Close all positions                                | 🟢     |
+| Close selected positions                           | 🟢     |
+| Select strikes                                     | 🟢     |
+| Modify open/pending order                          | 🔴     |
+| **Basic Features**                                 |        |
+| Automatic ATM strike selection                     | 🟢     |
+| Live MTM / PNL                                     | 🟢     |
+| Target price                                       | 🟢     |
+| Stoploss price                                     | 🟢     |
+| Market exit for target and stoploss                | 🟢     |
+| Limit exit for target and stoploss                 | 🔵     |
+| Trailing Stoploss                                  | 🟡     |
+| Automatic Strike Offset selection                  | 🔵     |
+| ⚡Underlying & Futures based Target & Stoploss     | 🔵     |
+| **Key Features**                                   |        |
+| One-click trading buttons                          | 🟢     |
+| Kill switch (client-side)                          | 🟢     |
+| Trade Journal                                      | 🔵     |
+| Paper Trading                                      | 🔵     |
+| Reports For IT Filing                              | 🔵     |
+| ⚡ Same Token Usability for MTM View Only App Mode | 🔵     |
+| Discipline Automations                             | 🔵     |
+| Parallel Copy Trading to multiple broker accounts  | 🔵     |
+| **Real-Time Market Data**                          |
+| LTP for underlying                                 | 🟢     |
+| LTP for selected call/put strikes                  | 🟢     |
 
 #### Note:
 
