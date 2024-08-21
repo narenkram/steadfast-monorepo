@@ -6,7 +6,7 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-api**](https://github.com/narenkram/steadfast-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status (Updated: 13-08-2024)
+### Quick Status (Updated: 21-08-2024)
 
 Legend:
 🟢 Available/Implemented
@@ -43,10 +43,10 @@ Legend:
 | One-click trading buttons                          | 🟢     |
 | Kill switch (client-side)                          | 🟢     |
 | Trade Journal                                      | 🔵     |
-| Paper Trading                                      | 🔵     |
+| Paper Trading                                      | 🟡     |
 | Reports For IT Filing                              | 🔵     |
 | ⚡ Same Token Usability for MTM View Only App Mode | 🔵     |
-| Discipline Automations                             | 🔵     |
+| Discipline Automations                             | 🟡     |
 | Parallel Copy Trading to multiple broker accounts  | 🔵     |
 | **Real-Time Market Data**                          |
 | LTP for underlying                                 | 🟢     |
