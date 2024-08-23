@@ -6,7 +6,7 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-api**](https://github.com/narenkram/steadfast-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status (Updated: 21-08-2024)
+### Quick Status (Updated: 23-08-2024)
 
 Legend:
 🟢 Available/Implemented
@@ -37,8 +37,9 @@ Legend:
 | Market exit for target and stoploss                | 🟢     |
 | Limit exit for target and stoploss                 | 🔵     |
 | Trailing Stoploss                                  | 🟡     |
-| Automatic Strike Offset selection                  | 🔵     |
+| Automatic Strike Offset selection                  | 🟡     |
 | ⚡Underlying & Futures based Target & Stoploss     | 🔵     |
+| Basket Orders                                      | 🟡     |
 | **Key Features**                                   |        |
 | One-click trading buttons                          | 🟢     |
 | Kill switch (client-side)                          | 🟢     |
@@ -51,6 +52,7 @@ Legend:
 | **Real-Time Market Data**                          |
 | LTP for underlying                                 | 🟢     |
 | LTP for selected call/put strikes                  | 🟢     |
+| LTP Range Bar                                      | 🔵     |
 
 #### Note:
 
