@@ -28,7 +28,7 @@ Legend:
 | Close all positions                                | 🟢     |
 | Close selected positions                           | 🟢     |
 | Select strikes                                     | 🟢     |
-| Modify open/pending order                          | 🔴     |
+| Modify open/pending order                          | 🟡     |
 | **Basic Features**                                 |        |
 | Automatic ATM strike selection                     | 🟢     |
 | Live MTM / PNL                                     | 🟢     |
