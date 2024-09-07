@@ -67,6 +67,14 @@ Legend:
 
 ![Preview in App Settings](preview_settings.png)
 
+## LTP Range Bar
+
+![Preview in LTP Range Bar](preview_ltprangebar.png)
+
+## One Click Trading Keys
+
+![Preview in One Click Trading](preview_oneclicktrade.png)
+
 ## Add Broker
 
 ![Preview in Add Broker](preview_addbroker_light.png)
