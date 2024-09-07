@@ -6,7 +6,7 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-api**](https://github.com/narenkram/steadfast-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status (Updated: 27-08-2024)
+### Quick Status (Updated: 07-09-2024)
 
 Legend:
 🟢 Available/Implemented
@@ -15,68 +15,65 @@ Legend:
 ⚡ Requested by our users
 🔴 Not Currently Considered
 
-| Feature                                            | Status |
-| -------------------------------------------------- | ------ |
-| **Supported Brokers**                              |        |
-| Flattrade                                          | 🟢     |
-| Shoonya (Finvasia)                                 | 🟢     |
-| ⚡ Other Brokers                                   | 🔴     |
-| **Trading Operations**                             |        |
-| Place Buy/Sell at market/limit orders              | 🟢     |
-| Cancel orders                                      | 🟢     |
-| Cancel selected orders                             | 🔵     |
-| Close all positions                                | 🟢     |
-| Close selected positions                           | 🟢     |
-| Select strikes                                     | 🟢     |
-| Modify open/pending order                          | 🟡     |
-| **Basic Features**                                 |        |
-| Automatic ATM strike selection                     | 🟢     |
-| Live MTM / PNL                                     | 🟢     |
-| Target price                                       | 🟢     |
-| Stoploss price                                     | 🟢     |
-| Market exit for target and stoploss                | 🟢     |
-| Limit exit for target and stoploss                 | 🔵     |
-| Trailing Stoploss                                  | 🟡     |
-| Automatic Strike Offset selection                  | 🟢     |
-| Automatic Expiry Offset selection                  | 🟢     |
-| ⚡Underlying & Futures based Target & Stoploss     | 🔵     |
-| Basket Orders                                      | 🟡     |
-| **Key Features**                                   |        |
-| One-click trading buttons                          | 🟢     |
-| Kill switch (client-side)                          | 🟢     |
-| Trade Journal                                      | 🔵     |
-| Paper Trading                                      | 🔵     |
-| Reports For IT Filing                              | 🔵     |
-| ⚡ Same Token Usability for MTM View Only App Mode | 🔵     |
-| Discipline Automations                             | 🟡     |
-| Parallel Copy Trading to multiple broker accounts  | 🔵     |
-| **Real-Time Market Data**                          |
-| LTP for underlying                                 | 🟢     |
-| LTP for selected call/put strikes                  | 🟢     |
-| LTP Range Bar                                      | 🟢     |
+| Feature                                        | Status |
+| ---------------------------------------------- | ------ |
+| **Supported Brokers**                          |        |
+| Flattrade                                      | 🟢     |
+| Shoonya (Finvasia)                             | 🟢     |
+| ⚡ Other Brokers                               | 🔴     |
+| **Trading Operations**                         |        |
+| Place Buy/Sell at market/limit orders          | 🟢     |
+| Cancel orders                                  | 🟢     |
+| Cancel selected orders                         | 🔵     |
+| Close all positions                            | 🟢     |
+| Close selected positions                       | 🟢     |
+| Select strikes                                 | 🟢     |
+| Modify open/pending order                      | 🟡     |
+| **Basic Features**                             |        |
+| Automatic ATM strike selection                 | 🟢     |
+| Selection Offsets                              | 🟢     |
+| Live MTM / PNL by Amount & ROI Percentage      | 🟢     |
+| Target & Stoploss by Percentage/Amount         | 🟢     |
+| Trailing Stoploss                              | 🔴     |
+| ⚡Underlying & Futures based Target & Stoploss | 🔵     |
+| Basket Orders                                  | 🟢     |
+| **Key Features**                               |        |
+| One-click trading buttons                      | 🟢     |
+| Kill switch (client-side)                      | 🟢     |
+| Trade Journal                                  | 🔵     |
+| Paper Trading                                  | 🔵     |
+| Reports For IT Filing                          | 🔵     |
+| **Real-Time Market Data**                      |
+| LTP for underlying                             | 🟢     |
+| LTP for selected call/put strikes              | 🟢     |
+| LTP Range Bar                                  | 🟢     |
 
 #### Note:
 
 - kill switch works on client side only, you will still be able to trade from your broker terminal.
-- All these symbols can be traded: NIFTY, BANKNIFTY, FINIFTY, MIDCPNIFTY NIFTYNXT50, SENSEX, BANKEX and SENSEX50.
+- All these symbols can be traded: NIFTY, BANKNIFTY, FINIFTY, MIDCPNIFTY, SENSEX, and BANKEX.
 
 # App Screenshots
 
-## Manage Brokers
+## Light Mode
 
-![Preview in Manage Brokers](preview_managebroker_light.png)
+![Preview in Light Mode](preview_light.png)
 
 ## Dark Mode
 
 ![Preview in Dark Mode](preview_dark.png)
 
+## App Settings
+
+![Preview in App Settings](preview_settings.png)
+
 ## Add Broker
 
 ![Preview in Add Broker](preview_addbroker_light.png)
 
-## Light Mode
+## Manage Brokers
 
-![Preview in Light Mode](preview_light.png)
+![Preview in Manage Brokers](preview_managebroker_light.png)
 
 # Join Our Telegram Channel
 
