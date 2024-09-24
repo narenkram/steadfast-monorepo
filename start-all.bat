@@ -31,6 +31,9 @@ if !errorlevel! neq 0 (
     echo Error updating steadfast-app.
     goto :error
 )
+echo Installing app dependencies...
+call npm install
+call npm audit fix
 cd ..
 
 REM Update steadfast-api
@@ -41,6 +44,9 @@ if !errorlevel! neq 0 (
     echo Error updating steadfast-api.
     goto :error
 )
+echo Installing api dependencies...
+call npm install
+call npm audit fix
 cd ..
 
 REM Update steadfast-websocket
@@ -54,7 +60,7 @@ if !errorlevel! neq 0 (
 cd ..
 
 echo Update complete.
-goto menu
+start-all.bat
 
 :run
 REM Start the API in a new command prompt window
