@@ -5,5 +5,8 @@
 	path = steadfast-api
 	url = https://github.com/narenkram/steadfast-api.git
 [submodule "steadfast-websocket"]
-path = steadfast-websocket
-url = https://github.com/narenkram/steadfast-websocket.git
+	path = steadfast-websocket
+	url = https://github.com/narenkram/steadfast-websocket.git
+[submodule "steadfast-extension"]
+	path = steadfast-extension
+	url = https://github.com/narenkram/steadfast-extension.git
