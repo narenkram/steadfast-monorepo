@@ -107,7 +107,7 @@ git --version
 node -v && npm -v
 ```
 
-3. Ensure [Python](https://www.python.org/downloads/) is installed and accessible from the command line.
+3. Ensure [Python 3.12](https://www.python.org/downloads/) is installed and accessible from the command line.
 
 ```
 python -V
@@ -115,27 +115,26 @@ python -V
 
 ### `Step 1`: Clone the Steadfast Monorepo
 
-1. Download & Install [GitHub Desktop](https://desktop.github.com/)
-2. On top right of this repo click "Code" > "Open with GitHub Desktop"
-3. Choose a local path and click "Clone"
-4. Open the monorepo folder in file explorer.
+1. Open your terminal or command prompt.
+2. Run the following command:
 
-### `Step 2`: Install
+```bash
+git clone https://github.com/narenkram/steadfast-monorepo
+```
 
-Double-click the `install-all.bat` file or run it from the command prompt.
+3. This will create a new folder named "steadfast-monorepo" in your current directory.
+4. Open/Navigate the monorepo folder in file explorer.
+
+### `Step 2`: Start
+
+Double-click the `start-all.bat` file or run it from the command prompt.
 
 #### What it does:
 
-1. Clones the steadfast-app repository
-2. Installs app dependencies
-3. Clones the steadfast-api repository
-4. Installs API dependencies
-5. Clones the steadfast-websocket repository
-6. Installs WebSocket dependencies
-
-### `Step 3`: Start
-
-Double-click the `start-all.bat` file or run it from the command prompt.
+1. **Install all (Recommended for first time setup):** Clones the repositories and installs dependencies.
+2. **Update, install and run (Recommended when a update is available):** Updates all repositories, installs dependencies, and then runs the services.
+3. **Run existing version:** Runs the existing version of the services without updating or installing anything.
+4. **Exit:** Exits the script.
 
 #### What it does:
 
@@ -144,7 +143,7 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 3. Starts the flattrade-websocket server at `localhost: 8765`
 4. Starts the shoonya-websocket server at `localhost: 8766`
 
-### `Step 4`: Stop
+### `Step 3`: Stop
 
 - To `Stop` simply close the opened command prompt windows.
 - Or Press any key to stop the app, api and websocket.

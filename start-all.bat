@@ -3,18 +3,96 @@ setlocal enabledelayedexpansion
 
 :menu
 echo Choose an option:
-echo 1. Update the everything (monorepo, app, api, websocket) (Recommended once a day)
-echo 2. Run existing version
-echo 3. Exit
-set /p choice="Enter your choice (1, 2, or 3): "
+echo 1. Install all (Recommended for first time setup)
+echo 2. Update, install and run (Recommended when a update is available)
+echo 3. Run existing version
+echo 4. Exit
+set /p choice="Enter your choice (1, 2, 3, or 4): "
 
-if "%choice%"=="1" goto update
-if "%choice%"=="2" goto run
-if "%choice%"=="3" goto end
+if "%choice%"=="1" goto install
+if "%choice%"=="2" goto update_and_run
+if "%choice%"=="3" goto run
+if "%choice%"=="4" goto end
 echo Invalid choice. Please try again.
 goto menu
 
-:update
+:install
+REM Clone the app repository and install dependencies
+echo Checking app repository...
+if not exist "steadfast-app\.git" (
+    echo Cloning app...
+    git clone https://github.com/narenkram/steadfast-app.git
+) else (
+    echo App repository already exists, skipping clone...
+)
+cd steadfast-app
+echo Installing app dependencies...
+call npm install
+if !errorlevel! neq 0 (
+    echo Error occurred while installing app dependencies.
+    goto :error
+)
+cd ..
+
+REM Clone the API repository and install dependencies
+echo Checking API repository...
+if not exist "steadfast-api\.git" (
+    echo Cloning API...
+    git clone https://github.com/narenkram/steadfast-api.git
+) else (
+    echo API repository already exists, skipping clone...
+)
+cd steadfast-api
+echo Installing API dependencies...
+call npm install
+if !errorlevel! neq 0 (
+    echo Error occurred while installing API dependencies.
+    goto :error
+)
+cd ..
+
+REM Clone the WebSocket repository and install dependencies
+echo Checking WebSocket repository...
+if not exist "steadfast-websocket\.git" (
+    echo Cloning WebSocket...
+    git clone https://github.com/narenkram/steadfast-websocket.git
+) else (
+    echo WebSocket repository already exists, skipping clone...
+)
+cd steadfast-websocket
+
+echo Installing WebSocket...
+
+REM Install NorenRestApi without dependencies for Flattrade and Shoonya
+echo Installing NorenRestApi for Flattrade and Shoonya...
+pip install --no-deps NorenRestApi
+if !errorlevel! neq 0 (
+    echo Error occurred while installing NorenRestApi.
+    goto :error
+)
+
+echo Installing Flattrade dependencies...
+cd flattrade
+call pip install -r requirements.txt
+if !errorlevel! neq 0 (
+    echo Error occurred while installing WebSocket dependencies for Flattrade.
+    goto :error
+)
+cd ..
+
+echo Installing Shoonya dependencies...
+cd shoonya
+call pip install -r requirements.txt
+if !errorlevel! neq 0 (
+    echo Error occurred while installing WebSocket dependencies for Shoonya.
+    goto :error
+)
+cd ..\..
+
+echo Repositories cloned and dependencies installed successfully.
+goto menu
+
+:update_and_run
 REM Update the entire monorepo
 echo Updating steadfast-monorepo...
 git pull https://github.com/narenkram/steadfast-monorepo main
@@ -60,7 +138,7 @@ if !errorlevel! neq 0 (
 cd ..
 
 echo Update complete.
-start-all.bat
+goto run
 
 :run
 REM Start the API in a new command prompt window
