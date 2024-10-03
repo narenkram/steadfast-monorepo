@@ -7,6 +7,3 @@
 [submodule "steadfast-websocket"]
 	path = steadfast-websocket
 	url = https://github.com/narenkram/steadfast-websocket.git
-[submodule "steadfast-extension"]
-	path = steadfast-extension
-	url = https://github.com/narenkram/steadfast-extension.git
