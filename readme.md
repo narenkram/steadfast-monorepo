@@ -6,7 +6,7 @@ This repository is a monorepo containing three main projects:
 2. [**steadfast-api**](https://github.com/narenkram/steadfast-api): The backend API server.
 3. [**steadfast-websocket**](https://github.com/narenkram/steadfast-websocket): The WebSocket service.
 
-### Quick Status (Updated: 10-09-2024)
+### Quick Status (Updated: 03-10-2024)
 
 Legend:
 🟢 Available/Implemented
@@ -34,7 +34,7 @@ Legend:
 | Selection Offsets                              | 🟢     |
 | Live MTM / PNL by Amount & ROI Percentage      | 🟢     |
 | Target & Stoploss by Percentage/Amount         | 🟢     |
-| Trailing Stoploss                              | 🔴     |
+| Trailing Stoploss                              | 🟢     |
 | ⚡Underlying & Futures based Target & Stoploss | 🔵     |
 | Basket Orders                                  | 🟢     |
 | Ready Made Strategies                          | 🟡     |
@@ -89,7 +89,7 @@ Legend:
 
 Stay updated by joining our [Telegram Channel](https://t.me/steadfastapp).
 
-## Steps to run the app
+# ⚡ Steps to run the app
 
 ### `Step 0`: Prerequisites
 
@@ -147,3 +147,25 @@ Double-click the `start-all.bat` file or run it from the command prompt.
 
 - To `Stop` simply close the opened command prompt windows.
 - Or Press any key to stop the app, api and websocket.
+
+# 📜 License
+
+This project is licensed under a Custom Free Use, No Commercialization License. It allows free use for personal and non-commercial purposes. Commercial use is possible but requires explicit permission and a revenue-sharing agreement with the project creator. For full license terms, please see the [LICENSE](LICENSE) file in this repository.
+
+# 🤝 Contributing
+
+Contributions are welcome! If you find any issues or want to add enhancements, feel free to submit a pull request. By contributing to this project, you agree that your contributions will be licensed under the same license terms as the project.
+
+# ☕ Donate
+
+If you find this project useful, consider showing your support! Your donations help maintain and improve the project. 😄
+
+You can donate using UPI (Unified Payments Interface):
+
+<img src="upi_logo.png" alt="UPI Logo" width="80"/>
+
+Scan the QR code below to make a UPI payment:
+
+<img src="scan_upi_id.jpg" alt="UPI QR Code" width="200"/>
+
+Thank you for your support!
