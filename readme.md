@@ -158,7 +158,16 @@ Contributions are welcome! If you find any issues or want to add enhancements, f
 
 # 💼 Project Acquisition
 
-This project, including all rights, is available for acquisition for 15 Lakhs (₹15,00,000) INR. Interested parties can contact email@narenkram.com for serious inquiries.
+This project is available for acquisition for 15 Lakhs (₹15,00,000) INR. The sale includes:
+
+- Full ownership and all rights to the project
+- The ability to make the project closed-source
+- Complete freedom for any kind of commercialization
+- Transfer of all associated repositories and assets
+
+Upon completion of the sale, the current creator will step away from the project entirely.
+
+Interested parties can contact email@narenkram.com for serious inquiries.
 
 # ☕ Donate
 
