@@ -111,19 +111,6 @@ This project is licensed under a Custom Free Use, No Commercialization License. 
 
 Contributions are welcome! If you find any issues or want to add enhancements, feel free to submit a pull request. By contributing to this project, you agree that your contributions will be licensed under the same license terms as the project.
 
-# 💼 Project Acquisition
-
-This project is available for acquisition for 15 Lakhs (₹15,00,000) INR. The sale includes:
-
-- Full ownership and all rights to the project
-- The ability to make the project closed-source
-- Complete freedom for any kind of commercialization
-- Transfer of all associated repositories and assets
-
-Upon completion of the sale, the current creator will step away from the project entirely.
-
-Interested parties can contact email@narenkram.com for serious inquiries.
-
 # ☕ Donate
 
 If you find this project useful, consider showing your support! Your donations help maintain and improve the project. 😄
