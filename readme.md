@@ -109,7 +109,7 @@ This project is licensed under a Custom Free Use, No Commercialization License. 
 
 # 🤝 Contributing
 
-Contributions are welcome! If you find any issues or want to add enhancements, feel free to submit a pull request. By contributing to this project, you agree that your contributions will be licensed under the same license terms as the project.
+Contributions are welcome! If you find any issues or want to add enhancements, feel free to submit a pull request. Please read our [contribution guidelines](contribute.md) before submitting your changes. By contributing to this project, you agree that your contributions will be licensed under the same license terms as the project.
 
 # ☕ Donate
 
