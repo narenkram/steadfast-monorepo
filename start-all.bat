@@ -61,34 +61,22 @@ if not exist "steadfast-websocket\.git" (
 )
 cd steadfast-websocket
 
-echo Installing WebSocket...
+echo Installing WebSocket dependencies...
+pip install -r requirements.txt
+if !errorlevel! neq 0 (
+    echo Error occurred while installing WebSocket dependencies.
+    goto :error
+)
 
-REM Install NorenRestApi without dependencies for Flattrade and Shoonya
-echo Installing NorenRestApi for Flattrade and Shoonya...
+REM Install NorenRestApi without dependencies
+echo Installing NorenRestApi...
 pip install --no-deps NorenRestApi
 if !errorlevel! neq 0 (
     echo Error occurred while installing NorenRestApi.
     goto :error
 )
 
-echo Installing Flattrade dependencies...
-cd flattrade
-call pip install -r requirements.txt
-if !errorlevel! neq 0 (
-    echo Error occurred while installing WebSocket dependencies for Flattrade.
-    goto :error
-)
 cd ..
-
-echo Installing Shoonya dependencies...
-cd shoonya
-call pip install -r requirements.txt
-if !errorlevel! neq 0 (
-    echo Error occurred while installing WebSocket dependencies for Shoonya.
-    goto :error
-)
-cd ..\..
-
 echo Repositories cloned and dependencies installed successfully.
 goto menu
 
@@ -149,13 +137,9 @@ REM Start the app in a new command prompt window
 echo Starting app...
 start /min cmd /c "cd steadfast-app && npm run dev"
 
-REM Start the Flattrade websocket in a new command prompt window
-echo Starting Flattrade websocket...
-start /min cmd /c "cd steadfast-websocket\flattrade && python flattrade-websocket.py"
-
-REM Start the Shoonya websocket in a new command prompt window
-echo Starting Shoonya websocket...
-start /min cmd /c "cd steadfast-websocket\shoonya && python shoonya-websocket.py"
+REM Start the WebSocket server in a new command prompt window
+echo Starting WebSocket server...
+start /min cmd /c "cd steadfast-websocket && python main.py"
 
 REM Wait for a few seconds to allow the app to start
 timeout /t 5
