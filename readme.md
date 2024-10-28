@@ -56,7 +56,7 @@ Operating System: `Windows 11`
 git --version
 ```
 
-2. Ensure [Node.js v21.7.3 and npm v10.5.0](https://nodejs.org/en/download/prebuilt-installer) are installed and accessible from the command line.
+2. Ensure [Node.js v20.18.0 and npm v10.8.2](https://nodejs.org/en/download/prebuilt-installer) are installed and accessible from the command line.
 
 ```
 node -v && npm -v
