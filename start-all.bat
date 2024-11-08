@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 :menu
 echo Choose an option:
 echo 1. Install all (Recommended for first time setup)
-echo 2. Update, install and run (Recommended when a update is available)
+echo 2. Update and install dependencies (For updating existing setup)
 echo 3. Run existing version
 echo 4. Exit
 set /p choice="Enter your choice (1, 2, 3, or 4): "
@@ -17,7 +17,9 @@ echo Invalid choice. Please try again.
 goto menu
 
 :install
-REM Clone the app repository and install dependencies
+REM Clone all repositories first
+echo Cloning repositories...
+
 echo Checking app repository...
 if not exist "steadfast-app\.git" (
     echo Cloning app...
@@ -25,16 +27,7 @@ if not exist "steadfast-app\.git" (
 ) else (
     echo App repository already exists, skipping clone...
 )
-cd steadfast-app
-echo Installing app dependencies...
-call npm install
-if !errorlevel! neq 0 (
-    echo Error occurred while installing app dependencies.
-    goto :error
-)
-cd ..
 
-REM Clone the API repository and install dependencies
 echo Checking API repository...
 if not exist "steadfast-api\.git" (
     echo Cloning API...
@@ -42,16 +35,7 @@ if not exist "steadfast-api\.git" (
 ) else (
     echo API repository already exists, skipping clone...
 )
-cd steadfast-api
-echo Installing API dependencies...
-call npm install
-if !errorlevel! neq 0 (
-    echo Error occurred while installing API dependencies.
-    goto :error
-)
-cd ..
 
-REM Clone the WebSocket repository and install dependencies
 echo Checking WebSocket repository...
 if not exist "steadfast-websocket\.git" (
     echo Cloning WebSocket...
@@ -59,9 +43,30 @@ if not exist "steadfast-websocket\.git" (
 ) else (
     echo WebSocket repository already exists, skipping clone...
 )
-cd steadfast-websocket
+
+REM Now install dependencies for each repository
+echo Installing dependencies for all repositories...
+
+echo Installing app dependencies...
+cd steadfast-app
+call npm install
+if !errorlevel! neq 0 (
+    echo Error occurred while installing app dependencies.
+    goto :error
+)
+cd ..
+
+echo Installing API dependencies...
+cd steadfast-api
+call npm install
+if !errorlevel! neq 0 (
+    echo Error occurred while installing API dependencies.
+    goto :error
+)
+cd ..
 
 echo Installing WebSocket dependencies...
+cd steadfast-websocket
 pip install -r requirements.txt
 if !errorlevel! neq 0 (
     echo Error occurred while installing WebSocket dependencies.
@@ -75,8 +80,8 @@ if !errorlevel! neq 0 (
     echo Error occurred while installing NorenRestApi.
     goto :error
 )
-
 cd ..
+
 echo Repositories cloned and dependencies installed successfully.
 goto menu
 
@@ -126,7 +131,7 @@ if !errorlevel! neq 0 (
 cd ..
 
 echo Update complete.
-goto run
+goto menu
 
 :run
 REM Start the API in a new command prompt window
