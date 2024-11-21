@@ -1,11 +1,13 @@
 # ⚠️ Important Notice
 
-**This repository contains experimental, AI-generated code and is NOT PRODUCTION-READY.**
+**This repository contains experimental, AI-generated code - USE WITH CAUTION**
 
-- This codebase is intended for learning and experimental purposes only
+- This codebase is intended primarily for learning and experimental purposes
 - Contains potential bugs, security vulnerabilities, and implementation issues
-- Not recommended for production use or handling real trading scenarios
+- Code quality is experimental-grade and not optimized for production
+- Can be used for real trading, but with extreme caution and at your own risk
 - May be unstable and prone to errors
+- Users should thoroughly test and understand the code before using with real funds
 
 **Looking for a production-ready solution?**  
 A professionally developed, premium version is coming soon at [steadfastapp.in](https://steadfastapp.in)
