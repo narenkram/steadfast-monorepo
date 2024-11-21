@@ -1,3 +1,15 @@
+# ⚠️ Important Notice
+
+**This repository contains experimental, AI-generated code and is NOT PRODUCTION-READY.**
+
+- This codebase is intended for learning and experimental purposes only
+- Contains potential bugs, security vulnerabilities, and implementation issues
+- Not recommended for production use or handling real trading scenarios
+- May be unstable and prone to errors
+
+**Looking for a production-ready solution?**  
+A professionally developed, premium version is coming soon at [steadfastapp.in](https://steadfastapp.in)
+
 # Project Overview
 
 This repository is a monorepo containing three main projects:
