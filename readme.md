@@ -8,7 +8,7 @@
 - May be unstable and prone to errors
 - Users should thoroughly test and understand the code before using with real funds
 
-# 🚀 Looking for a web access? `premium version`  
+# 🚀 Looking for a web access? `Premium Version`  
 ## A professionally developed, is coming soon at [steadfastapp.in](https://steadfastapp.in)
 
 # Project Overview
