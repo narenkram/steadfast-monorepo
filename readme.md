@@ -1,4 +1,4 @@
-## There are two different version for this project.
+## There are two different versions for this project.
 # ⚠️ Important Notice for `Open Source Version`
 **This repository contains experimental, AI-generated code - USE WITH CAUTION**
 - This codebase is intended primarily for learning and experimental purposes
