@@ -1,5 +1,5 @@
 #### There are two different versions for this project.
-### ⚠️ Important Notice for `Open Source Version`
+### ⚠️ Important Notice for `Open Source Version` 
 **This repository contains experimental, AI-generated code - USE WITH CAUTION**
 - This codebase is intended primarily for learning and experimental purposes
 - Contains potential bugs, security vulnerabilities, and implementation issues
@@ -8,8 +8,8 @@
 - May be unstable and prone to errors
 - Users should thoroughly test and understand the code before using with real funds
 
-### 🚀 Looking for a web access? `Premium Version`  
-#### A professionally developed, is coming soon at [steadfastapp.in](https://steadfastapp.in)
+### 🚀 Looking for a web access? `Premium Version` 
+#### A professionally developed web application is coming soon at [steadfastapp.in](https://steadfastapp.in), built using `TypeScript` and highly optimized for lightning-fast trades.
 
 # Project Overview
 
