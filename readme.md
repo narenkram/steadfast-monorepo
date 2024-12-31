@@ -9,7 +9,7 @@
 - Users should thoroughly test and understand the code before using with real funds
 
 ### 🚀 Looking for a web access? `Premium Version` 
-#### A professionally developed web application is coming soon at [steadfastapp.in](https://steadfastapp.in), built using `TypeScript` and highly optimized for lightning-fast trades.
+#### A professionally developed web application is available at [steadfastapp.in](https://steadfastapp.in), built using `TypeScript` and highly optimized for lightning-fast trades.
 
 # Project Overview
 
